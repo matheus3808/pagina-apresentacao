@@ -1,0 +1,245 @@
+
+/* aside e nav bar lateral */
+
+html, body{
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+}
+
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: rgb(2, 9, 44);
+    overflow-y: auto;
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 9997;
+}
+
+#header .profile img{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 2px solid orchid;
+    border-radius: 50%;
+}
+
+#header .profile h1{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#header .profile .redesSociais a{
+    font-size: 1rem;
+    background: #212431;
+    color: white;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 1s;
+    text-decoration: none;
+    
+
+
+}
+
+#header .profile .redesSociais a:hover{
+    background: #149ddd;
+
+}
+
+.menu{
+padding: 1.5rem;
+
+}
+
+.menu a, .menu a:focus{
+display: flex;
+align-items: center;
+color: #6f7180;
+transition: 0.6s;
+font-size: 14px;
+}
+
+.menu a i, .menu a:focus i{
+font-size: 24px;
+padding-right: 0.8rem;
+color: #6f7180;
+
+
+}
+
+.menu a:hover, .menu .active, .menu .active:focus, .menu li:hover > a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover i, .menu .active i, .menu .active:focus i, .menu li:hover > a i{
+    color: #149ddd;
+}
+
+/* começando a parte do main Inicio */
+
+#main{
+    margin-left: 300px;
+}
+
+section#inicio{
+    background-image: url(img/pexels-danny-meneses-943096.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section#inicio h2{
+    font-size: 3rem;
+    
+}
+
+section#inicio span#subtitle{
+    margin-right: 4rem;
+    font-size: 1.1rem;
+    
+}
+
+section#inicio div#arraste{
+    width: 9rem;
+}
+
+section#inicio div#arraste a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+ i.menu-mobile{
+    position: fixed;
+    color: #ffff;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .botaosecao22{
+    background-color: rgb(2, 9, 44);
+    padding-left:40px ;
+    padding-right:40px ;
+    padding-top: 15px;
+    padding-bottom: 15px ;
+    font-size: 18px;
+    color: white;
+    border-radius: 15%;
+    text-decoration: none;
+    }
+
+    .botaosecao22:hover{
+        background-color: #149ddd;
+        transition: 0.9s;
+         color: #ffff;
+        
+    }
+
+    .botaosecao2{
+        padding-top: 40px;
+    }
+        
+
+ /*  inicio  da responsividade*/
+
+ @media (max-width: 1024px){
+    #header{
+        left: -300px;
+    }
+
+    i.menu-mobile{
+        display: flex;
+        color: #ffffff;
+        background-color: #212431;
+        border-radius: 50%;
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+
+   section#inicio span#subtitle{
+        font-size: 1rem;
+    }
+    
+    #main{
+       margin-left: 0;
+    }
+ }
+
+ /* inicio classes para javaScript */
+ 
+.menu-nav-active{
+    overflow: hidden;
+}
+
+.menu-nav-active #header{
+    
+    left: 0;
+}
+
+/* fim classes para javaScript */
+
+.carousel-indicators{
+    margin-bottom: -2rem;
+    
+}
+
+
+/* animações */
+
+[data-anime]{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+[data-anime="down"]{
+
+    transform: translate3d(0,-100%,0);
+}
+
+[data-anime="up"]{
+
+    transform: translate3d(0,100%,0);
+}
+
+[data-anime="left"]{
+
+    transform: translate3d(-100,0,0);
+}
+
+[data-anime="right"]{
+
+    transform: translate3d(0,0,100);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
+/* animações */
