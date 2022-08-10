@@ -24,10 +24,10 @@ html, body{
 #header .profile img{
     margin: 15px auto;
     display: block;
-    width: 120px;
-    height: 120px;
-    border: 2px solid orchid;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 #header .profile h1{
