@@ -13,12 +13,13 @@ html, body{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 15rem;
     background-color: rgb(2, 9, 44);
     overflow-y: auto;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 9997;
+    height: 100%;
 }
 
 #header .profile img{
@@ -91,7 +92,7 @@ color: #6f7180;
 /* começando a parte do main Inicio */
 
 #main{
-    margin-left: 300px;
+    margin-left: 15rem;
 }
 
 section#inicio{
@@ -168,7 +169,7 @@ section#inicio div#arraste a{
 
  @media (max-width: 1024px){
     #header{
-        left: -300px;
+        left: -15rem;
     }
 
     i.menu-mobile{
@@ -243,3 +244,10 @@ section#inicio div#arraste a{
 
 
 /* animações */
+
+
+/*secao habilidades*/
+
+#progress1{
+    padding-left: 1rem;
+}
